@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,65 @@
     <link rel="icon" href="../../images/icon-enfermagem.svg" type="image/svg">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div id="tela">
+        <nav id="cabecalho">
+            <h1>ESTOQUE</h1>
+            <img src="" alt="imagem de usuário">
+        </nav>
+        <div id="add-item">
+            <label for="add-nome">TAREFA:</label>
+            <input type="text" id="add-nome" name="add-nome" placeholder="NOME" required>
+
+            <label for="add-descricao">DESC:</label>
+            <input type="text" id="add-descricao" name="add-descricao" placeholder="DESCRIÇÃO" required>
+
+            <label for="add-data-inicio">De:</label>
+            <input type="date" id="add-data-inicio" name="add-data-inicio" required>
+
+            <label for="add-data-fim">Até:</label>
+            <input type="date" id="add-data-fim" name="add-data-fim" required>
+        </div>
+        <div id="filtros" name="filtros">
+            <legend>FILTROS</legend>
+            <div>
+                <label>Data:</label>
+                <input type="date" name="ftr-data-inicio" id="ftr-data-inicio">
+                <input type="date" name="ftr-data-fim" id="ftr-data-fim">
+            </div>
+            <div>
+                <label for="criadores">Criador:</label>
+                <select name="criadores" id="criadores">
+                </select>
+            </div>
+            <div>
+                <label for="ftr-concluido">Concluido:</label>
+                <input type="checkbox" name="ftr-concluido" id="ftr-concluido">
+            </div>
+        </div>
+        <div id="listar-tarefas">
+            <div style=" width: 400px;">
+                <div class="nome-tarefa-0000" style="font-size: 30px; font-weight: 900;">
+                    Nome da tarefa
+                </div>
+                <p class="desc-tarefa-0000" style="margin: 0;">
+                    Descrição do que será feito
+                    pelo usuário ao adicionar a tarefa, nela deve conter o nome da tarefa, a descrição da mesma, junto
+                    com a data de início e fim
+                </p>
+                <div>
+                    <label for="tarefa-concluida">Concluido:</label>
+                    <input type="checkbox" id="tarefa-concluida" style="line-height: 10px; justify-self: center;">
+                </div>
+                <div>
+                    <label for="tarefa-autor">Criado por:</label>
+                    <div id="tarefa-autor">Desconhecido, Alguém </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
