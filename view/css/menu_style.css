@@ -16,37 +16,95 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-} /* OK! */
+}
+
+/* OK! */
 
 #tela-menu {
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
+    border: 1px solid black;
+    border-radius: 22px;
+    background-color: gainsboro;
     width: 1000px;
-    min-height: 90%;
     height: auto;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-#adicionar-tarefa, #filtros {
+#adicionar-tarefa,
+#filtros {
     display: flex;
     flex-direction: row;
     height: 30px;
     width: 100%;
-    border: 1px solid blue;
+    border: 1px solid none;
+    align-items: center;
+}
+
+.add {
+    border: 4px solid black;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 10px;
+    padding: 0 22px;
+}
+
+.ftr {
+    border: 4px solid black;
+    border-radius: 0 0 20px 20px;
+    padding: 0 22px;
+}
+
+#adicionar-tarefa {
+    justify-content: space-evenly;
+}
+
+#filtros {
+    justify-content: space-between;
+    padding: 6px 40px;
+}
+
+h2 {
+    padding: 0 22px;
+    border-bottom: 1px solid black;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 4px;
+}
+
+#ftr-concluido {
+    width: 20px;
+    height: 20px;
 }
 
 #listar-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
     height: auto;
-    padding: 11px;
+    padding: 22px;
+    background-color: whitesmoke;
+    border-radius: 22px;
+    margin-top: 20px;
+    border: 2px solid black;
 }
 
 .tarefa {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 11px;
+    padding: 10px 20px 11px;
+    gap: 4px;
+    border: 10px solid gray;
+    border-radius: 15px;
 }
+
 .tarefa-nome-status {
     display: flex;
     flex-direction: row;
@@ -58,7 +116,8 @@ body {
     padding: 0 8px;
 }
 
-.status {
+.status,
+.status div {
     display: flex;
     flex-direction: row;
     height: 40px;
@@ -67,11 +126,13 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
 .status input {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin: 0 10px 0 4px;
 }
 
@@ -88,7 +149,31 @@ body {
     height: 100%;
 }
 
-.data-inicio-fim {
+.datas-inicio-fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 40%;
     height: 100%;
+}
+
+.tarefa-DeData,
+.tarefa-AteData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    align-self: center;
+    margin: 30px 0 0 0;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
 }

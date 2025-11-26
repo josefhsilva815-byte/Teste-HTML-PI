@@ -15,58 +15,66 @@
         <h1>ESTOQUE</h1>
         <img src="" alt="imagem de usuário">
     </nav>
-    <div id="tela-menu" style="background-color: skyblue;">
-        <legend>ADD TAREFA</legend>
-        <div id="adicionar-tarefa" style="background-color: lightcoral;">
-            <div class="adicionar nome">
-                <label for="adicionar-nome">TAREFA:</label>
-                <input type="text" id="add-nome" name="add-nome" placeholder="NOME" required>
-            </div>
-            <div class="adicionar descricao">
-                <label for="adicionar-descricao">DESC:</label>
-                <input type="text" id="add-descricao" name="add-descricao" placeholder="DESCRIÇÃO" required>
-            </div>
-            <div class="adicionar data-inicio">
-                <label for="adicionar-data-inicio">De:</label>
-                <input type="date" id="add-data-inicio" name="add-data-inicio" required>
-            </div>
-            <div class="adicionar data-fim">
-                <label for="adicionar-data-fim">Até:</label>
-                <input type="date" id="add-data-fim" name="add-data-fim" required>
-            </div>
-        </div>
-
-
-        <legend>FILTROS</legend>
-        <div id="filtros" style="background-color: lightcyan;">
-            <div>
-                <label for="ftr-data-inicio">Início:</label>
-                <input type="date" name="ftr-data-inicio" id="ftr-data-inicio">
-                <label for="ftr-data-fim">Fim:</label>
-                <input type="date" name="ftr-data-fim" id="ftr-data-fim">
-            </div>
-            <div>
-                <label for="ftr-concluido">Concluido:</label>
-                <input type="checkbox" name="ftr-concluido" id="ftr-concluido">
+    <div id="tela-menu">
+        <div class="add">
+            <h2>ADICIONAR TAREFA</h2>
+            <div id="adicionar-tarefa">
+                <div class="adicionar nome">
+                    <label for="adicionar-nome">TAREFA:</label>
+                    <input type="text" id="add-nome" name="add-nome" placeholder="NOME" required>
+                </div>
+                <div class="adicionar descricao">
+                    <label for="adicionar-descricao">DESC:</label>
+                    <input type="text" id="add-descricao" name="add-descricao" placeholder="DESCRIÇÃO" required>
+                </div>
+                <div class="adicionar data-inicio">
+                    <label for="adicionar-data-inicio">De:</label>
+                    <input type="date" id="add-data-inicio" name="add-data-inicio" required>
+                </div>
+                <div class="adicionar data-fim">
+                    <label for="adicionar-data-fim">Até:</label>
+                    <input type="date" id="add-data-fim" name="add-data-fim" required>
+                </div>
             </div>
         </div>
 
 
-        <div id="listar-tarefas" style="background-color: lightgoldenrodyellow; padding: 22px;">
-            <div class="tarefa" style="background-color: lightgray;">
+        <div class="ftr">
+            <h2>FILTRAR POR</h2>
+            <div id="filtros">
+                <div class="datas">
+                    <label for="ftr-data-inicio">Início:</label>
+                    <input type="date" name="ftr-data-inicio" id="ftr-data-inicio">
+                    <label for="ftr-data-fim">Fim:</label>
+                    <input type="date" name="ftr-data-fim" id="ftr-data-fim">
+                </div>
+                <div class="check">
+                    <label for="ftr-concluido">Concluido</label>
+                    <input type="checkbox" name="ftr-concluido" id="ftr-concluido">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="listar-tarefas">
+            <div class="tarefa">
                 <div class="tarefa-nome-status">
                     <h1 class="nome">
                         Nome da Tarefa
                     </h1>
                     <div class="status">
-                        <label for="tarefa-Concluido" class="tarefa-Concluido">Concluido</label>
-                        <input type="checkbox" name="tarefa-Concluido" id="tarefa-Concluido">
-                        <label for="tarefa-Importante" class="tarefa-Importante">Importante </label>
-                        <input type="checkbox" name="tarefa-Importante" id="tarefa-Importante">
+                        <div>
+                            <label for="tarefa-Concluido" class="tarefa-Concluido">Concluido</label>
+                            <input type="checkbox" name="tarefa-Concluido" id="tarefa-Concluido">
+                        </div>
+                        <div>
+                            <label for="tarefa-Importante" class="tarefa-Importante">Importante </label>
+                            <input type="checkbox" name="tarefa-Importante" id="tarefa-Importante">
+                        </div>
                     </div>
                 </div>
                 <div class="descricao-data">
-                    <p class="tarefa-Desc" style="margin: 0;">
+                    <p class="tarefa-Desc">
                         Descrição do que será feito
                         pelo usuário ao adicionar a tarefa, nela deve conter o nome da tarefa, a descrição da mesma,
                         junto
@@ -85,6 +93,8 @@
                 </div>
             </div>
         </div>
+
+        <button type="reset">CRIAR</button>
     </div>
 
 </body>
