@@ -1,0 +1,13 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="150" cy="150" r="130" stroke="black" stroke-width="10" fill="none" />
+  <g transform="translate(150,150)">
+    <text x="0" y="0"
+          text-anchor="middle"
+          dominant-baseline="central"
+          font-family="Arial, sans-serif"
+          font-size="165"
+          font-weight="bold">
+      UI
+    </text>
+  </g>
+</svg>
