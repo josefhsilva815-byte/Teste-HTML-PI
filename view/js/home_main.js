@@ -1,9 +1,5 @@
+const URL_LOGIN = "http://localhost:3000"
 
-const input = {
-    email: document.getElementById("email"),
-    senha: document.getElementById("senha") 
-};
-
-document.getElementById("enviar").addEventListener("click", () => {
-    
-})
+const email = document.getElementById("email");
+const senha = document.getElementById("senha");
+const btn_enviar = document.getElementById("enviar");
