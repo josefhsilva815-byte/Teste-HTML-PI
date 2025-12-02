@@ -14,11 +14,11 @@ const Config = {
   development: {
     client: 'sqlite3',
     connection: {
-      host: "",
-      user: "",
-      password: "",
-      database: "",
-      port: ""
+      host: process.env.HOST,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+      database: process.env.DATA_BASE,
+      port: process.env.PORT
     },
     migrations: {
       directory: path.join("./src/database/knex/migrations")
@@ -27,7 +27,7 @@ const Config = {
   production: {
     client: "pg",
     connection: {
-      connectionString: "",
+      connectionString: process.env.URL_DB,
       ssl: { rejectUnauthorized: false }
     }
   }
